@@ -83,6 +83,7 @@
 .descriptionContainer p {
   margin: 0;
   padding: 0.5rem 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .productoFooter {
   margin: 1rem;

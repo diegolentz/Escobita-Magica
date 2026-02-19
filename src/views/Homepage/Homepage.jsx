@@ -4,78 +4,30 @@ import { NavBar } from "../../components/nav/nav";
 import { Card } from "../../components/card/card";
 import { getProductos } from "../../data/productos";
 
-const productos = [
-    {
-        title: "Detergente Premium",
-        description: "Limpieza profunda y aroma floral duradero para todas tus prendas.",
-        price: 12.5,
-        image: "/detergente.jpg",
-        badge: "Nuevo",
-        tone: "gold",
-        quantityMode: false,
-    },
-    {
-        title: "Desinfectante Multi",
-        description: "Elimina el 99.9% de bacterias con fragancia de cítricos frescos.",
-        price: 8,
-        image: "/desinfectante.jpg",
-        tone: "green",
-        quantityMode: true,
-        quantity: 1,
-    }
-    ,
-    {
-        title: "Desinfectante Multi",
-        description: "Elimina el 99.9% de bacterias con fragancia de cítricos frescos.",
-        price: 8,
-        image: "/desinfectante.jpg",
-        tone: "green",
-        quantityMode: true,
-        quantity: 1,
-    }
-    ,
-    {
-        title: "Desinfectante Multi",
-        description: "Elimina el 99.9% de bacterias con fragancia de cítricos frescos.",
-        price: 8,
-        image: "/desinfectante.jpg",
-        tone: "green",
-        quantityMode: true,
-        quantity: 1,
-    }
-    ,
-    {
-        title: "Desinfectante Multi",
-        description: "Elimina el 99.9% de bacterias con fragancia de cítricos frescos.",
-        price: 8,
-        image: "/desinfectante.jpg",
-        tone: "green",
-        quantityMode: true,
-        quantity: 1,
-    }
-    ,
-    {
-        title: "Desinfectante Multi",
-        description: "Elimina el 99.9% de bacterias con fragancia de cítricos frescos.",
-        price: 8,
-        image: "/desinfectante.jpg",
-        tone: "green",
-        quantityMode: true,
-        quantity: 1,
-    }
-]
-
 export const HomePage = () => {
   const [productos, setProductos] = useState([]);
+  const [paginaActual, setPaginaActual] = useState(1);
+  const productosPorPagina = 10;
 
   useEffect(() => {
     const cargarProductos = async () => {
       const data = await getProductos();
       setProductos(data);
     };
-
     cargarProductos();
-  }, []);
+  }, [productos]);
+
+  // Calcular índices
+  const indiceUltimo = paginaActual * productosPorPagina;
+  const indicePrimero = indiceUltimo - productosPorPagina;
+  const productosActuales = productos.slice(indicePrimero, indiceUltimo);
+
+  // Total de páginas
+  const totalPaginas = Math.ceil(productos.length / productosPorPagina);
+
+  const cambiarPagina = (numeroPagina) => {
+    setPaginaActual(numeroPagina);
+  };
 
   return (
     <>
@@ -96,13 +48,43 @@ export const HomePage = () => {
       </section>
       <section className="productosContainer">
         <h2 className="titleContainerProductos">Nuestros Combos</h2>
-        <h3 className="titleContainerProductos">Preciona el carrito y eleji la cantidad, cuando tengas lo que necesitas presiona continuar con la compra</h3>
         <div className="productos">
-          {productos.map((p) => (
+          {productosActuales.map((p) => (
             <Card key={p.id} {...p} />
           ))}
         </div>
-        
+
+        {/* Paginación */}
+        <div className="paginacion">
+          <button
+            className="btnPaginacion"
+            onClick={() => cambiarPagina(paginaActual - 1)}
+            disabled={paginaActual === 1}
+          >
+            ← Anterior
+          </button>
+
+          <div className="numerosPagina">
+            {[...Array(totalPaginas)].map((_, index) => (
+              <button
+                key={index + 1}
+                className={`btnNumero ${paginaActual === index + 1 ? 'activo' : ''}`}
+                onClick={() => cambiarPagina(index + 1)}
+              >
+                {index + 1}
+              </button>
+            ))}
+          </div>
+
+          <button
+            className="btnPaginacion"
+            onClick={() => cambiarPagina(paginaActual + 1)}
+            disabled={paginaActual === totalPaginas}
+          >
+            Siguiente →
+          </button>
+        </div>
+
         <div className="checkoutSection">
           <button className="btnContinuar">
             Continuar con la compra

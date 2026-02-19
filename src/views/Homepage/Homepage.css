@@ -125,5 +125,63 @@ footer{
   letter-spacing: 0.5px;
 }
 
+.paginacion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.btnPaginacion {
+  padding: 0.6rem 1.2rem;
+  font-size: 2rem;
+  width: 15rem;
+  font-weight: 600;
+  background: white;
+  border: 2px solid var(--Rojo);
+  color: var(--Rojo);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btnPaginacion:hover:not(:disabled) {
+  background: var(--Rojo);
+  color: white;
+}
+
+.btnPaginacion:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.numerosPagina {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.btnNumero {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #e0e0e0;
+  background: white;
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btnNumero:hover {
+  border-color: var(--Rojo);
+  color: var(--Rojo);
+}
+
+.btnNumero.activo {
+  background: var(--Rojo);
+  border-color: var(--Rojo);
+  color: white;
+}
+
 
 
