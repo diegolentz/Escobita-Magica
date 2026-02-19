@@ -1,0 +1,130 @@
+.imgEscobita{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: 50rem;
+    /* margin-top: var(--NavBarHeight); */
+    background: var(--GradientOverlay);
+}
+
+.imgLogo{
+    height: 95%;
+    margin: 0 auto;
+}
+
+.descripcion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    text-align: center;
+
+    & span {
+        font-size: 2.5rem;
+        color: var(--Rojo);
+        font-weight: bold;
+    }    
+}
+
+.descripcion {
+
+  max-width: 100vw;
+  margin: 2rem auto 0;
+  padding: 2rem 1.5rem;
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+
+
+.descripcion h1 {
+  margin: 0;
+  font-size: clamp(1.8rem, 3vw, 2.6rem);
+  line-height: 1.2;
+}
+
+.descripcionLead {
+  margin: 1rem auto 0;
+  max-width: 700px;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.descripcionBeneficios {
+  margin-top: 1.4rem;
+  display: flex;
+  gap: 0.8rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.beneficio {
+  padding: 0.55rem 0.9rem;
+  border-radius: 12px;
+  background: #f4f4f4;
+  font-weight: 600;
+}
+
+.beneficioPrincipal {
+  background: #ffe9dc;
+  color: var(--Rojo);
+}
+
+.productosContainer{
+    margin: 2rem auto;
+    padding: 0 1.5rem;
+}
+
+.productos{
+    display: grid;
+    padding: 2rem;
+    margin: 2rem auto;
+    grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+    gap: 2rem;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+}
+.titleContainerProductos{
+    text-align: center;
+    margin: 5rem auto 0;
+    color: var(--Rojo);
+}
+
+
+
+footer{
+    width: 100vw;
+    height: 10rem;
+    background-color: #333;
+}
+
+.checkoutSection {
+  display: flex;
+  justify-content: center;
+  margin: 2.5rem 0;
+  padding: 1.5rem 0;
+  border-top: 2px solid #f0f0f0;
+}
+
+.btnContinuar {
+  padding: 0.9rem 2.5rem;
+  font-size: 2rem;
+  font-weight: 700;
+  color: white;
+  background: linear-gradient(135deg, var(--Rojo) 0%, #d43426 100%);
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(192, 57, 43, 0.25);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+
+

@@ -1,0 +1,136 @@
+.productoCard {
+  background: #f3f4f6;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  width: 33rem;
+}
+
+
+
+.productoImgWrap {
+  position: relative;
+  height: 250px;
+  background: #edd29e;
+  margin: 0.75rem;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.productoBadge {
+  position: absolute;
+  top: 0rem;
+  right: 0rem;
+  background: #fff3e8;
+  color: #f97316;
+  font-size: 1.8rem;
+  font-weight: bold;
+  padding: 1rem;
+  border-radius: 0 0 0  14px;
+}
+
+.productoImg {
+    width: 25rem;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+.productoBody {
+  padding: 1rem;
+}
+
+.productoNombre {
+  font-size: 1.8rem;
+  margin: 0.5rem;
+  color: #2d92a0;
+}
+
+.descriptionContainer {
+    display: grid;
+    height: 10rem;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 1.5rem;
+    overflow-y: auto;
+    gap: 0;
+    text-align: left;
+}
+
+
+.descriptionContainer p {
+    margin: 0;
+    padding: 0.5rem 0;
+}
+.productoFooter {
+  margin: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem;
+}
+
+.productoPrecio {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #f97316;
+}
+
+.quantityControls{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.8rem;
+}
+
+.restarBoton, .sumarBoton {
+  border: none;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #ffe8dc;
+  color: #f97316;
+  cursor: pointer;
+  display: grid;
+  place-items: center;  
+}
+.contadorCantidad {
+  /* background: #e5e7eb; */
+  color: #475569;
+  border-radius: 999px;
+  padding: 0.45rem 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.productoBtnCarrito {
+  border: none;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #ffe8dc;
+  color: #f97316;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+}
+
+.productoCantidad {
+  background: #e5e7eb;
+  color: #475569;
+  border-radius: 999px;
+  padding: 0.45rem 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.productoTotal {
+  margin: 0.55rem 0 0;
+  text-align: right;
+  color: #94a3b8;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
