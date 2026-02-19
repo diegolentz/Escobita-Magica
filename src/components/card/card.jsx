@@ -1,8 +1,14 @@
 import "./card.css";
 import { useState } from "react";
+import { useDispatch } from "react-redux";
 import LocalGroceryStoreIcon from "@mui/icons-material/LocalGroceryStore";
+import { updateCart } from "../../redux/slices/carritoSlice";
+import InfoIcon from '@mui/icons-material/Info';
+import ArrowRightIcon from '@mui/icons-material/ArrowRight';
+import DoneIcon from '@mui/icons-material/Done';
 
 export const Card = ({
+    id,
     title,
     description,
     price,
@@ -10,24 +16,37 @@ export const Card = ({
     badge,
     tone,
 }) => {
+    const dispatch = useDispatch();
     const [quantityMode, setQuantityMode] = useState(false);
-    const [quantity, setQuantity] = useState(0); // Cantidad inicial (puedes manejar esto con estado si quieres que sea dinámico)
-    const [total, setTotal] = useState(price); // Total inicial (puedes manejar esto con estado si quieres que sea dinámico)
-    const onConunt = () => {
+    const [quantity, setQuantity] = useState(1);
+
+    const onClickCarrito = () => {
         setQuantityMode(true);
         setQuantity(1);
+        dispatch(updateCart({
+            id,
+            titulo: title,
+            descripcion: description,
+            precioUnitario: price,
+            cantidad: 1,
+        }));
     };
 
     const onQuantityChange = (newQuantity) => {
-        if (newQuantity > 0) {
-            setQuantity(newQuantity);
-            setTotal(price * newQuantity);
-        } else {
-            setQuantity(0);
+        setQuantity(newQuantity);
+        dispatch(updateCart({
+            id,
+            titulo: title,
+            descripcion: description,
+            precioUnitario: price,
+            cantidad: newQuantity,
+        }));
+
+        if (newQuantity < 1) {
             setQuantityMode(false);
+            setQuantity(1);
         }
     };
-
 
     return (
         <article className="productoCard">
@@ -38,41 +57,27 @@ export const Card = ({
 
             <div className="productoBody">
                 <h3 className="productoNombre">{title}</h3>
-
                 <div className="descriptionContainer">
-                    {/* <p className="productoDesc">{description}</p> */}
                     {description && description.map((item, index) => (
-                        <p key={index}>{item}</p>
+                        <p key={index}><DoneIcon  style={{marginRight: '8px', color: 'green', fontSize: '1.8rem', fontWeight: 'bold'}} />{item}</p>
                     ))}
                 </div>
 
-
                 <div className="productoFooter">
-                    <span className="productoPrecio">${total.toFixed(2)}</span>
+                    <span className="productoPrecio">${(price * quantity).toFixed(2)}</span>
 
                     {quantityMode ? (
-
                         <div className="quantityControls">
-                            <button className="restarBoton" onClick={() => onQuantityChange(quantity - 1)} >
-                                −
-                            </button>
-                            <span className="contadorCantidad">{quantity}</span>
-                            <button className="sumarBoton" onClick={() => onQuantityChange(quantity + 1)}>
-                                +
-                            </button>
+                            <button className="productoBtnCarrito" onClick={() => onQuantityChange(quantity - 1)}>−</button>
+                            <span>{quantity}</span>
+                            <button className="productoBtnCarrito" onClick={() => onQuantityChange(quantity + 1)}>+</button>
                         </div>
                     ) : (
-                        <button className="productoBtnCarrito" aria-label="Agregar al carrito" onClick={() => onConunt()}>
+                        <button className="productoBtnCarrito" onClick={onClickCarrito}>
                             <LocalGroceryStoreIcon fontSize="large" />
                         </button>
                     )}
                 </div>
-                <div className="ContadorTotal">
-
-                </div>
-
-
-
             </div>
         </article>
     );

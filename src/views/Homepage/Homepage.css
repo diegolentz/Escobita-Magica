@@ -83,8 +83,7 @@
 .productos{
     display: grid;
     padding: 2rem;
-    margin: 2rem auto;
-    grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
     gap: 2rem;
     justify-items: center;
     align-items: center;

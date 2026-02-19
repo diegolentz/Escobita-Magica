@@ -3,14 +3,14 @@
   border-radius: 16px;
   overflow: hidden;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
-  width: 33rem;
+  width: 30rem;
 }
 
 
 
 .productoImgWrap {
   position: relative;
-  height: 250px;
+  height: 20rem;
   background: #edd29e;
   margin: 0.75rem;
   border-radius: 14px;
@@ -49,21 +49,40 @@
 }
 
 .descriptionContainer {
-    display: grid;
-    height: 10rem;
-    grid-template-columns: repeat(1, 1fr);
-    justify-content: flex-start;
-    align-items: center;
-    font-size: 1.5rem;
-    overflow-y: auto;
-    gap: 0;
-    text-align: left;
+  display: grid;
+  height: 12rem;
+  grid-template-columns: repeat(1, 1fr);
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 1.5rem;
+  overflow-y: auto;
+  gap: 0;
+  text-align: left;
+  scrollbar-color: #f97316 #f3f4f6;
+  scrollbar-width: thin;
+}
+
+.descriptionContainer::-webkit-scrollbar {
+  width: 8px;
+}
+
+.descriptionContainer::-webkit-scrollbar-track {
+  background: #f3f4f6;
+}
+
+.descriptionContainer::-webkit-scrollbar-thumb {
+  background: #f97316;
+  border-radius: 4px;
+}
+
+.descriptionContainer::-webkit-scrollbar-thumb:hover {
+  background: #ea580c;
 }
 
 
 .descriptionContainer p {
-    margin: 0;
-    padding: 0.5rem 0;
+  margin: 0;
+  padding: 0.5rem 0;
 }
 .productoFooter {
   margin: 1rem;

@@ -96,7 +96,7 @@ export const HomePage = () => {
       </section>
       <section className="productosContainer">
         <h2 className="titleContainerProductos">Nuestros Combos</h2>
-        <h3 className="titleContainerProductos">Preciona el carrito y eleji la cantidad, cuando tengas lo que necesitas presiona continuar con la compra al final de la lista</h3>
+        <h3 className="titleContainerProductos">Preciona el carrito y eleji la cantidad, cuando tengas lo que necesitas presiona continuar con la compra</h3>
         <div className="productos">
           {productos.map((p) => (
             <Card key={p.id} {...p} />
