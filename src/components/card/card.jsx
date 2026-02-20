@@ -1,11 +1,12 @@
 import "./card.css";
-import { useState } from "react";
-import { useDispatch } from "react-redux";
+import { useEffect, useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import LocalGroceryStoreIcon from "@mui/icons-material/LocalGroceryStore";
 import { updateCart } from "../../redux/slices/carritoSlice";
 import InfoIcon from '@mui/icons-material/Info';
 import ArrowRightIcon from '@mui/icons-material/ArrowRight';
 import DoneIcon from '@mui/icons-material/Done';
+import { selectCantidadPorId } from "../../redux/slices/carritoSlice";
 
 export const Card = ({
     id,
@@ -19,12 +20,14 @@ export const Card = ({
     const dispatch = useDispatch();
     const [quantityMode, setQuantityMode] = useState(false);
     const [quantity, setQuantity] = useState(1);
+    const quantityStorage = useSelector((state) => selectCantidadPorId(state, id));
 
     const onClickCarrito = () => {
         setQuantityMode(true);
         setQuantity(1);
         dispatch(updateCart({
             id,
+            imagen : image,
             titulo: title,
             descripcion: description,
             precioUnitario: price,
@@ -36,6 +39,7 @@ export const Card = ({
         setQuantity(newQuantity);
         dispatch(updateCart({
             id,
+            imagen : image,
             titulo: title,
             descripcion: description,
             precioUnitario: price,
@@ -47,6 +51,16 @@ export const Card = ({
             setQuantity(1);
         }
     };
+
+    useEffect(() => {
+        if (quantityStorage > 0) {
+            setQuantityMode(true);
+            setQuantity(quantityStorage);
+        } else {
+            setQuantityMode(false);
+            setQuantity(1);
+        }
+    }, []);
 
     return (
         <article className="productoCard">

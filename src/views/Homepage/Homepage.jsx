@@ -4,6 +4,7 @@ import { NavBar } from "../../components/nav/nav";
 import { Card } from "../../components/card/card";
 import { getProductos } from "../../data/productos";
 import SearchIcon from "@mui/icons-material/Search";
+import { useNavigate } from "react-router-dom";
 
 export const HomePage = () => {
   const [productos, setProductos] = useState([]);
@@ -11,6 +12,12 @@ export const HomePage = () => {
   const [busqueda, setBusqueda] = useState("");
   const [resultadosBusqueda, setResultadosBusqueda] = useState(null);
   const productosPorPagina = 10;
+
+  const nav = useNavigate();
+
+  const handleContinuarCompra = () => {
+    nav('/carrito');
+  }
 
   useEffect(() => {
     const cargarProductos = async () => {
@@ -164,7 +171,7 @@ export const HomePage = () => {
         )}
 
         <div className="checkoutSection">
-          <button className="btnContinuar">Continuar con la compra</button>
+          <button className="btnContinuar" onClick={handleContinuarCompra}>Continuar con la compra</button>
         </div>
       </section>
       <footer></footer>

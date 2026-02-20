@@ -2,8 +2,20 @@ import './nav.css'
 import CleaningServicesIcon from '@mui/icons-material/CleaningServices';
 import Button from '@mui/material/Button';
 import LocalGroceryStoreIcon from '@mui/icons-material/LocalGroceryStore';
+import { useLocation, useNavigate } from 'react-router-dom';
 
 export const NavBar = () => {
+    const nav = useNavigate();
+    const location = useLocation();
+    const isHome = location.pathname === '/';
+
+    const handleCarritoClick = () => {
+        nav('/carrito');
+    };
+    const handleBackClick = () => {
+        nav('/');
+    };
+
     return (
         <nav className="NavBar">
             <div className="navIzquierda">
@@ -32,9 +44,16 @@ export const NavBar = () => {
                             backgroundColor: '#EFD7CA'
                         }
                     }}
+                    onClick={isHome ? handleCarritoClick : handleBackClick}
                 >
-                    <LocalGroceryStoreIcon sx={{ fontSize: 26, color: 'inherit' }} />
-                    Carrito
+                    {isHome ? (
+                        <>
+                            <LocalGroceryStoreIcon sx={{ fontSize: 26, color: 'inherit' }} />
+                            Carrito
+                        </>
+                    ) : (
+                        'Volver'
+                    )}
                 </Button>
             </div>
         </nav>

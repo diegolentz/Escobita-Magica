@@ -102,7 +102,7 @@
 .quantityControls{
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 2rem;
     font-size: 1.8rem;
 }
 

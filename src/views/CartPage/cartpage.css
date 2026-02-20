@@ -1,0 +1,60 @@
+.productosContainerCaarrito{
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 5rem auto;
+}
+
+.productosCarrito{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: space-around;
+}
+
+.productoCarrito{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+}
+
+.imgTitulo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    gap: 1rem;
+    width: 15%;
+}
+
+.imagenCarrito{
+    width: 12rem;
+}
+
+.tipografiaCarrito{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 15%;
+    font-size: 1.6rem;
+}
+
+.subtotalCarrito{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 15%;
+    font-size: 2rem;
+    & span {
+        font-weight: bold;
+        color: red;
+    }
+}
