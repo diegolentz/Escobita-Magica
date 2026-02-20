@@ -6,9 +6,10 @@
   --RojoSombreado: rgba(212, 137, 51, 0.425);
   --LogoBackground: #1e75c771;
   --GradientOverlay: linear-gradient(135deg, #1e75c7 0%, #ec5b13 50%, #ffd700 75%, #00b050 100%);
-
-
+  --RojoSecundario: #f97316;
+  --VerdeDinero: #4f6947;
   --NavBarHeight: 7rem;
+  --FondoBoton: #f7e1d5;
 
 
 }
@@ -107,6 +108,18 @@ h3 {
       justify-content: center;
       align-items: center;
     }
+  }
+
+  .productoCarrito{
+    flex-direction: column;
+    width: 95vw;
+    gap: 3rem;
+  }
+  .tipografiaCarrito, .subtotalCarrito{
+    width: 100%;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
   }
 
 

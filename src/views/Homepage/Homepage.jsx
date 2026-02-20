@@ -83,7 +83,7 @@ export const HomePage = () => {
 
       <section className="descripcion">
         <h1>Productos de limpieza en la puerta de tu casa</h1>
-        <h2 className="descripcionLead">
+        <h2 className="descripcionLead beneficio beneficioPrincipal">
           Comprá desde la comodidad de tu hogar y nosotros te lo llevamos.
         </h2>
 
@@ -91,12 +91,12 @@ export const HomePage = () => {
           <span className="beneficio beneficioPrincipal">
             🚚 Envíos sin cargo desde $25.000
           </span>
-          <span className="beneficio">📍 Envíos solo en GBA</span>
+          <span className="beneficio beneficioPrincipal">📍 Envíos solo en GBA</span>
         </div>
       </section>
 
       <section className="productosContainer">
-        <h2 className="titleContainerProductos">Nuestros Combos</h2>
+        <h2 className="titleContainerProductos">Nuestros Combos y Productos</h2>
 
         <div className="buscadorContainer">
           <div className="buscadorWrapper">
@@ -109,7 +109,7 @@ export const HomePage = () => {
               onKeyPress={(e) => e.key === "Enter" && handleBusqueda()}
             />
             <button className="btnBusqueda" onClick={handleBusqueda}>
-              <SearchIcon />
+              <SearchIcon fontSize="large"  />
               Buscar
             </button>
             {resultadosBusqueda !== null && (
