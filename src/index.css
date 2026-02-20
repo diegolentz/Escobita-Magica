@@ -10,13 +10,14 @@
 
   --NavBarHeight: 7rem;
 
- 
+
 }
 
 
 
 
-html,body {
+html,
+body {
   margin: 0;
   display: flex;
   align-items: flex-start;
@@ -28,10 +29,11 @@ html,body {
   font-size: 62.5%;
   margin: 0;
   padding: 0;
-  
+  overflow-x: hidden;
+
 }
 
-img{
+img {
   object-fit: contain;
 }
 
@@ -47,12 +49,66 @@ h2 {
 }
 
 
-h3{
+h3 {
   font-size: 1.8rem;
   line-height: 1.2;
 }
 
+@media screen and (max-width: 760px) {
+
+  .navIzquierda {
+    & svg {
+      display: none;
+    }
+  }
+
+  .imgLogo {
+    width: 30rem;
+  }
+
+  .NavBar {
+    gap: 3rem;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  .navDerecha {
+    & button {
+      font-size: 1.5rem;
+    }
+  }
+
+  .descripcion {
+    height: 30rem;
+  }
+
+  .numerosPagina{
+    display: none;
+  }
+
+  .btnContinuar {
+    font-size: 1.5rem;
+  }
+
+  .productos{
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  }
+  .footerContent{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+    & a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
 
 
 
-
+}

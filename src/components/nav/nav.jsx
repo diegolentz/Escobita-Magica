@@ -3,6 +3,7 @@ import CleaningServicesIcon from '@mui/icons-material/CleaningServices';
 import Button from '@mui/material/Button';
 import LocalGroceryStoreIcon from '@mui/icons-material/LocalGroceryStore';
 import { useLocation, useNavigate } from 'react-router-dom';
+import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 
 export const NavBar = () => {
     const nav = useNavigate();
@@ -20,8 +21,8 @@ export const NavBar = () => {
         <nav className="NavBar">
             <div className="navIzquierda">
                 {/* icono */}
-                <CleaningServicesIcon sx={{ fontSize: 30, fill: 'white', backgroundColor: 'var(--Rojo)', padding: '0.5rem', borderRadius: '1rem'}} />
-                <h2>Escobita Mágica</h2>
+                <CleaningServicesIcon onClick={handleBackClick} sx={{ fontSize: 25, fill: 'white', backgroundColor: 'var(--Rojo)', padding: '0.8rem', borderRadius: '1rem', cursor: 'pointer' }} />
+                <h2 onClick={handleBackClick} style={{ cursor: 'pointer' }}>Escobita Mágica</h2>
             </div>
             <div className="navDerecha">
                 <Button
@@ -33,15 +34,16 @@ export const NavBar = () => {
                         justifyContent: 'center',
                         alignItems: 'center',
                         textTransform: 'none',
-                        borderRadius: '0 18px 0 18px',
+                        borderRadius: '1rem',
                         px: 2,
                         py: 0.5,
-                        backgroundColor: 'var(--RojoSombreado)',
-                        color: 'var(--Rojo)',
+                        backgroundColor: 'var(--Rojo)',
+                        color: 'white',
                         fontWeight: 'bold',
                         fontSize: '1.8rem',
+                        cursor: 'pointer',
                         '&:hover': {
-                            backgroundColor: '#EFD7CA'
+                            cursor: 'pointer'
                         }
                     }}
                     onClick={isHome ? handleCarritoClick : handleBackClick}
@@ -52,7 +54,10 @@ export const NavBar = () => {
                             Carrito
                         </>
                     ) : (
-                        'Volver'
+                        <>
+                            <ArrowBackIcon sx={{ fontSize: 26, color: 'inherit' }} />
+                            Volver
+                        </>
                     )}
                 </Button>
             </div>

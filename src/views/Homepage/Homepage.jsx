@@ -80,6 +80,7 @@ export const HomePage = () => {
       <div className="imgEscobita">
         <img className="imgLogo" src="/logo.png" alt="Escobita Mágica Logo" />
       </div>
+
       <section className="descripcion">
         <h1>Productos de limpieza en la puerta de tu casa</h1>
         <h2 className="descripcionLead">
@@ -97,7 +98,6 @@ export const HomePage = () => {
       <section className="productosContainer">
         <h2 className="titleContainerProductos">Nuestros Combos</h2>
 
-        {/* Buscador */}
         <div className="buscadorContainer">
           <div className="buscadorWrapper">
             <input
@@ -132,7 +132,6 @@ export const HomePage = () => {
         
         </div>
 
-        {/* Paginación */}
         {totalPaginas > 1 && (
           <div className="paginacion">
             <button
