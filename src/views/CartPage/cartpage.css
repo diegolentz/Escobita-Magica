@@ -1,11 +1,11 @@
 .productosContainerCaarrito{
-    width: 80vw;
+    width: 100vw;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin: 5rem auto;
+    align-self: center;
 }
 
 .productosCarrito{

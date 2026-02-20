@@ -4,13 +4,17 @@
   overflow: hidden;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
   width: 30rem;
+  height: 50rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 
 
 .productoImgWrap {
   position: relative;
-  height: 20rem;
+  height: 22rem;
   background: #edd29e;
   margin: 0.75rem;
   border-radius: 14px;

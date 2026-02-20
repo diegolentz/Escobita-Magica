@@ -46,7 +46,23 @@ export const CartPage = () => {
 
             <section className="productosContainerCaarrito">
                 {productos.length === 0 ? (
-                    <p>Tu carrito está vacío</p>
+                    <div style={{ textAlign: 'center', padding: '40px' }}>
+                        <p style={{ fontSize: '2.5rem', color: '#ff9800', fontWeight: 'bold', marginBottom: '20px' }}>Tu carrito está vacío</p>
+                        <button 
+                            onClick={() => window.location.href = '/'}
+                            style={{
+                                padding: '12px 30px',
+                                fontSize: '1.5rem',
+                                backgroundColor: '#ff9800',
+                                color: 'white',
+                                border: 'none',
+                                borderRadius: '5px',
+                                cursor: 'pointer'
+                            }}
+                        >
+                            Seleccionar productos
+                        </button>
+                    </div>
                 ) : (
                     <div className="productosCarrito">
                         {productos.map((p) => (
@@ -72,6 +88,39 @@ export const CartPage = () => {
                     </div>
                 )}
             </section>
+             <footer className="footerEscobita">
+        <div className="footerContent">
+            <div className="footerSection">
+                <h3>Escobita Mágica</h3>
+                <p>Productos de limpieza de calidad a tu puerta</p>
+            </div>
+
+            <div className="footerSection">
+                <h3>Contacto</h3>
+                <a href="https://wa.me/541234567890" target="_blank" rel="noopener noreferrer">
+                    📱 WhatsApp
+                </a>
+                <a href="https://instagram.com/escobita.magica" target="_blank" rel="noopener noreferrer">
+                    📸 Instagram
+                </a>
+            </div>
+
+            <div className="footerSection">
+                <h3>Métodos de Pago</h3>
+                <p>💵 Efectivo</p>
+                <p>🏦 Transferencia Bancaria</p>
+            </div>
+
+            <div className="footerSection">
+                <h3>Entregas</h3>
+                <p>📍 Solo en AMBA</p>
+            </div>
+        </div>
+
+        <div className="footerBottom">
+            <p>© 2024 Escobita Mágica. Todos los derechos reservados.</p>
+        </div>
+    </footer>
         </>
     );
 };

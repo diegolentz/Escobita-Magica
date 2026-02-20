@@ -126,13 +126,10 @@ export const HomePage = () => {
         </div>
 
         <div className="productos">
-          {productosActuales.length > 0 ? (
+          {productosActuales.length > 0 && (
             productosActuales.map((p) => <Card key={p.id} {...p} />)
-          ) : (
-            <div className="sinResultados">
-              <p>No se encontraron productos</p>
-            </div>
           )}
+        
         </div>
 
         {/* Paginación */}
@@ -174,7 +171,40 @@ export const HomePage = () => {
           <button className="btnContinuar" onClick={handleContinuarCompra}>Continuar con la compra</button>
         </div>
       </section>
-      <footer></footer>
+
+    <footer className="footerEscobita">
+        <div className="footerContent">
+            <div className="footerSection">
+                <h3>Escobita Mágica</h3>
+                <p>Productos de limpieza de calidad a tu puerta</p>
+            </div>
+
+            <div className="footerSection">
+                <h3>Contacto</h3>
+                <a href="https://wa.me/541234567890" target="_blank" rel="noopener noreferrer">
+                    📱 WhatsApp
+                </a>
+                <a href="https://instagram.com/escobita.magica" target="_blank" rel="noopener noreferrer">
+                    📸 Instagram
+                </a>
+            </div>
+
+            <div className="footerSection">
+                <h3>Métodos de Pago</h3>
+                <p>💵 Efectivo</p>
+                <p>🏦 Transferencia Bancaria</p>
+            </div>
+
+            <div className="footerSection">
+                <h3>Entregas</h3>
+                <p>📍 Solo en AMBA</p>
+            </div>
+        </div>
+
+        <div className="footerBottom">
+            <p>© 2024 Escobita Mágica. Todos los derechos reservados.</p>
+        </div>
+    </footer>
     </>
   );
 };
