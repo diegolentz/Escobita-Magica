@@ -4,7 +4,7 @@ const productosMock = [
         title: "Combo N°1: Desinfeccion Profunda",
         description: ["10 litros de lavandina concentrada.","500cc de concentrado para pisos (rinde 10 litros)."],
         price: 13600,
-        image: "../../public/combo1.jpeg",
+        image: "/combo1.jpeg",
         badge: "Nuevo",
         tone: "gold",
     },
@@ -13,7 +13,7 @@ const productosMock = [
         title: "Combo N°2: Lavado Economico",
         description: ["5lts. de jabon liquido doble concentrado tipo skyp."," 5lts de suavizante."],
         price: 12780,
-        image: "../../public/combo2.jpeg",
+        image: "/combo2.jpeg",
         tone: "green",
     },
     {
@@ -21,7 +21,7 @@ const productosMock = [
         title: "Combo N°3: Economico Doble",
         description: ["10 lts de jabon doble concentrado tipo skyp.", "10 lts de suavizante."],
         price: 25000,
-        image: "../../public/combo3.jpeg",
+        image: "/combo3.jpeg",
         tone: "green",
     },
     {
@@ -29,7 +29,7 @@ const productosMock = [
         title: "Combo N°4: Lavadero Premium",
         description: ["5lts de jabon premium lavadero.", "5lts de suavizante."],
         price: 16200,
-        image: "../../public/combo4.jpeg",
+        image: "/combo4.jpeg",
         tone: "gold",
     },
     {
@@ -37,7 +37,7 @@ const productosMock = [
         title: "Combo N°5: XL Concentrado",
         description: ["10 lts de jabon liquido doble concentrado tipo skyp."],
         price: 16200,
-        image: "../../public/combo5.jpeg",
+        image: "/combo5.jpeg",
         tone: "gold",
     },
     {
@@ -45,7 +45,7 @@ const productosMock = [
         title: "Combo N°6: Pileta",
         description: ["10 litros de cloro."],
         price: 13410,
-        image: "../../public/combo6.jpeg",
+        image: "/combo6.jpeg",
         tone: "gold",
     },
     {
@@ -53,7 +53,7 @@ const productosMock = [
         title: "Combo N°7: Mega",
         description: ["5 lts de jabon liquido doble concentrado tipo skyp .", "5 lts de suavizante", "500cc de concentrado para pisos (rinde 10 litros).","esponja","valerina ", "papel higienico 10 x 30 MTS."],
         price: 34200,
-        image: "../../public/combo7.jpeg",
+        image: "/combo7.jpeg",
         tone: "gold",
     },
     {
@@ -61,7 +61,7 @@ const productosMock = [
         title: "Combo N°8: Basico",
         description: ["5 lts de jabon liquido doble concentrado tipo skip.", "5 lts de suavizante", "5lts de lavandina concentrada", "500cc de concentrado para pisos (rinde 10 litros)", "rejilla", "esponja"],
         price: 23850,
-        image: "../../public/combo8.jpeg",
+        image: "/combo8.jpeg",
         tone: "gold",
     },
     {
@@ -69,7 +69,7 @@ const productosMock = [
         title: "Combo N°9: Completo",
         description: ["5 lts de jabón Líquido Tipo skyp.", "5 lts de suavizante", "5 lts de lavandina concentrada", "1 litro de detergente liquido", "1 litro de jabon de manos", "1 litro de desengrasante multiuso", "Trapo de pisos gris", "Esponja", "Rejilla", "10 bolsas de consorcio de 45x60"],
         price: 29880,
-        image: "../../public/combo9.jpeg",
+        image: "/combo9.jpeg",
         tone: "gold",
     },
     {
@@ -77,7 +77,7 @@ const productosMock = [
         title: "Combo N°10: Limpieza ECO",
         description: ["5 lts de Detergente concentrado.","5 lts de lavandina concentrada","500cc de concentrado para pisos (rinde 10 litros)"],
         price: 15570,
-        image: "../../public/combo10.jpeg",
+        image: "/combo10.jpeg",
         tone: "gold",
     },
     {
@@ -85,7 +85,7 @@ const productosMock = [
         title: "Combo N°11: Cocina",
         description: ["1 litro de Detergente concentrado.", "1 litro de desengrasante multiuso", "Precio en efectivo: $8100"],
         price: 9000,
-        image: "../../public/combo11.jpeg",
+        image: "/combo11.jpeg",
         tone: "gold",
     },
     {
@@ -93,7 +93,7 @@ const productosMock = [
         title: "Combo N°12: Balde",
         description: ["Balde escurridor (x1).", "Mopa (x1)", "Palo (x1)"],
         price: 15200,
-        image: "../../public/combo12.jpeg",
+        image: "/combo12.jpeg",
         tone: "gold",
     },
     {
@@ -101,7 +101,7 @@ const productosMock = [
         title: "Combo N°13: DUO Limpieza Profunda",
         description: ["5 lts de vinagre de alcohol.", "1 kilo de bicarbonato de sodio"],
         price: 9900,
-        image: "../../public/combo13.jpeg",
+        image: "/combo13.jpeg",
         tone: "gold",
     },
     {
@@ -109,7 +109,7 @@ const productosMock = [
         title: "Combo N°14: Escobillon",
         description: ["Escoba con palo", "Secador con palo", "Pala con cabo", "Trapo de piso de algodón"],
         price: 12600,
-        image: "../../public/combo14.jpeg",
+        image: "/combo14.jpeg",
         tone: "gold",
     },
     {
@@ -117,7 +117,7 @@ const productosMock = [
         title: "Combo N°15: Treio Desengrasante Total",
         description: ["1 litro de desengrasanre multiuso.", "1 litro de Detergente", "Bicarbonato de sodio"],
         price: 10200,
-        image: "../../public/combo15.jpeg",
+        image: "/combo15.jpeg",
         tone: "gold",
     },
     {
@@ -125,7 +125,7 @@ const productosMock = [
         title: "Combo N°16: Blanquisimo",
         description: ["5 lts de jabon doble concentrado tipo skyp.", "5 lts de suavizante", "5 lts de lavandina para bancos", "1 kg de percarbonato (blanqueador)"],
         price: 29000,
-        image: "../../public/combo16.jpeg",
+        image: "/combo16.jpeg",
         tone: "red",
     }
 
@@ -136,7 +136,7 @@ const productosMock = [
         title: "Alcohol al 70%",
         description: ["5 litro de alcohol al 70%."],
         price: 7630,
-        image: "../../public/combo17.jpeg",
+        image: "/combo17.jpeg",
         tone: "red",
     }
     ,
@@ -145,7 +145,7 @@ const productosMock = [
         title: "Alcohol al 70%",
         description: ["1 litro de alcohol al 70%."],
         price: 2867,
-        image: "../../public/combo18.jpeg",
+        image: "/combo18.jpeg",
         tone: "red",
     }
     ,
@@ -154,7 +154,7 @@ const productosMock = [
         title: "Alcohol al 96%",
         description: ["5 lts de alcohol al 96%."],
         price: 10585,
-        image: "../../public/combo19.jpeg",
+        image: "/combo19.jpeg",
         tone: "red",
     }
     ,
@@ -163,7 +163,7 @@ const productosMock = [
         title: "Alcohol al 96%",
         description: ["1 litro de alcohol al 96%."],
         price: 3499,
-        image: "../../public/combo20.jpeg",
+        image: "/combo20.jpeg",
         tone: "red",
     }
     ,
@@ -172,7 +172,7 @@ const productosMock = [
         title: "Cloro",
         description: ["5 lts de cloro."],
         price: 6930,
-        image: "../../public/combo21.jpeg",
+        image: "/combo21.jpeg",
         tone: "red",
     }
     ,
@@ -181,7 +181,7 @@ const productosMock = [
         title: "Cloro",
         description: ["1 litro de cloro."],
         price: 1500,
-        image: "../../public/combo22.jpeg",
+        image: "/combo22.jpeg",
         tone: "red",
     }
     ,
@@ -190,7 +190,7 @@ const productosMock = [
         title: "Jabon de manos",
         description: ["5 lts de jabon de manos."],
         price: 9720,
-        image: "../../public/combo23.jpeg",
+        image: "/combo23.jpeg",
         tone: "red",
     }
     ,
@@ -199,7 +199,7 @@ const productosMock = [
         title: "Jabon de manos liquido",
         description: ["1 litro de jabon de manos liquido."],
         price: 3060,
-        image: "../../public/combo24.jpeg",
+        image: "/combo24.jpeg",
         tone: "red",
     }
     ,
@@ -208,7 +208,7 @@ const productosMock = [
         title: "Jabon liquido doble concentrado",
         description: ["5 litros de jabon liquido tipo skip."],
         price: 7650,
-        image: "../../public/combo25.jpeg",
+        image: "/combo25.jpeg",
         tone: "red",
     }
     ,
@@ -217,7 +217,7 @@ const productosMock = [
         title: "Jabon liquido doble concentrado",
         description: ["1 litro de jabon liquido tipo skip."],
         price: 2187,
-        image: "../../public/combo26.jpeg",
+        image: "/combo26.jpeg",
         tone: "red",
     }
     ,
@@ -226,7 +226,7 @@ const productosMock = [
         title: "Jabon liquido premium",
         description: ["5 litros de jabon liquido premium lavadero."],
         price: 9720,
-        image: "../../public/combo27.jpeg",
+        image: "/combo27.jpeg",
         tone: "red",
     }
     ,
@@ -235,7 +235,7 @@ const productosMock = [
         title: "Jabon liquido premium",
         description: ["1 litro de jabon liquido premium lavadero."],
         price: 2500,
-        image: "../../public/combo28.jpeg",
+        image: "/combo28.jpeg",
         tone: "red",
     }
     ,
@@ -244,7 +244,7 @@ const productosMock = [
         title: "Lavandina",
         description: ["5 lts de lavandina concentrada."],
         price: 3600,
-        image: "../../public/combo29.jpeg",
+        image: "/combo29.jpeg",
         tone: "red",
     }
     ,
@@ -253,7 +253,7 @@ const productosMock = [
         title: "Lavandina",
         description: ["1 litro de lavandina concentrada."],
         price: 1000,
-        image: "../../public/combo30.jpeg",
+        image: "/combo30.jpeg",
         tone: "red",
     }
     ,
@@ -262,7 +262,7 @@ const productosMock = [
         title: "Suavizante",
         description: ["5 lts de suavizante."],
         price: 8500,
-        image: "../../public/combo31.jpeg",
+        image: "/combo31.jpeg",
         tone: "red",
     }
     ,
@@ -271,7 +271,7 @@ const productosMock = [
         title: "Suavizante",
         description: ["1 litro de suavizante."],
         price: 2000,
-        image: "../../public/combo32.jpeg",
+        image: "/combo32.jpeg",
         tone: "red",
     }
     ,
@@ -280,7 +280,7 @@ const productosMock = [
         title: "Escencias para pisos",
         description: ["Escencias concentradas para pisos x 250cc", "Rinde 5 litros."],
         price: 10350,
-        image: "../../public/combo16.jpeg",
+        image: "/combo16.jpeg",
         tone: "red",
     }
     ,
@@ -289,7 +289,7 @@ const productosMock = [
         title: "Desengrasante",
         description: ["Desengrasante multiuso x 5 litros."],
         price: 22050,
-        image: "../../public/combo34.jpeg",
+        image: "/combo34.jpeg",
         tone: "red",
     }
     ,
@@ -298,7 +298,7 @@ const productosMock = [
         title: "Desengrasante",
         description: ["Desengrasante multiuso x 1 litro."],
         price: 2610,
-        image: "../../public/combo35.jpeg",
+        image: "/combo35.jpeg",
         tone: "red",
     }
     ,
@@ -307,7 +307,7 @@ const productosMock = [
         title: "Desengrasante",
         description: ["5 litros de desengrasante."],
         price: 9900,
-        image: "../../public/combo36.jpeg",
+        image: "/combo36.jpeg",
         tone: "red",
     }
     ,
@@ -316,7 +316,7 @@ const productosMock = [
         title: "Desengrasante",
         description: ["1 litro de desengrasante."],
         price: 2790,
-        image: "../../public/combo37.jpeg",
+        image: "/combo37.jpeg",
         tone: "red",
     }
     ,
@@ -325,7 +325,7 @@ const productosMock = [
         title: "Lavandina en gel",
         description: ["5 litros de lavandina en gel."],
         price: 5832,
-        image: "../../public/combo38.jpeg",
+        image: "/combo38.jpeg",
         tone: "red",
     }
     ,
@@ -334,7 +334,7 @@ const productosMock = [
         title: "Lavandina en gel",
         description: ["1 litro de lavandina en gel."],
         price: 1458,
-        image: "../../public/combo39.jpeg",
+        image: "/combo39.jpeg",
         tone: "red",
     }
     ,
@@ -343,7 +343,7 @@ const productosMock = [
         title: "Lavandina para blancos",
         description: ["5 litros de lavandina para blancos."],
         price: 4050,
-        image: "../../public/combo40.jpeg",
+        image: "/combo40.jpeg",
         tone: "red",
     }
     ,
@@ -352,7 +352,7 @@ const productosMock = [
         title: "Lavandina para blancos",
         description: ["1 litro de lavandina para blancos."],
         price: 1170,
-        image: "../../public/combo41.jpeg",
+        image: "/combo41.jpeg",
         tone: "red",
     }
     ,
@@ -361,7 +361,7 @@ const productosMock = [
         title: "Perfumina",
         description: ["Perfumina concentrada para ropa x 250cc"],
         price: 3090,
-        image: "../../public/combo42.jpeg",
+        image: "/combo42.jpeg",
         tone: "red",
     }
     ,
@@ -370,7 +370,7 @@ const productosMock = [
         title: "Perfumina",
         description: ["Perfumina concentrada para ropa x 1 litro"],
         price: 7650,
-        image: "../../public/combo43.jpeg",
+        image: "/combo43.jpeg",
         tone: "red",
     }
     ,
@@ -379,7 +379,7 @@ const productosMock = [
         title: "Balde",
         description: ["Balde escurridor X 1."],
         price: 9000,
-        image: "../../public/combo44.jpeg",
+        image: "/combo44.jpeg",
         tone: "red",
     }
     ,
@@ -388,7 +388,7 @@ const productosMock = [
         title: "Balde ",
         description: ["Balde redondo X 1."],
         price: 3600,
-        image: "../../public/combo45.jpeg",
+        image: "/combo45.jpeg",
         tone: "red",
     }
     ,
@@ -397,7 +397,7 @@ const productosMock = [
         title: "Paño Repasador",
         description: ["Paño amarillo de valerina"],
         price: 464,
-        image: "../../public/combo46.jpeg",
+        image: "/combo46.jpeg",
         tone: "red",
     }
     ,
@@ -406,7 +406,7 @@ const productosMock = [
         title: "Paño Repasador",
         description: ["Paño repasador de algodón."],
         price: 2430,
-        image: "../../public/combo47.jpeg",
+        image: "/combo47.jpeg",
         tone: "red",
     }
     ,
@@ -415,7 +415,7 @@ const productosMock = [
         title: "Rollo de cocina",
         description: ["Rollo de cocina x 4 unidades"],
         price: 9500,
-        image: "../../public/combo48.jpeg",
+        image: "/combo48.jpeg",
         tone: "red",
     }
     ,
@@ -424,7 +424,7 @@ const productosMock = [
         title: "Rollo de cocina",
         description: ["Rollo de cocina x 200 paños"],
         price: 2700,
-        image: "../../public/combo49.jpeg",
+        image: "/combo49.jpeg",
         tone: "red",
     }
     ,
@@ -433,7 +433,7 @@ const productosMock = [
         title: "Rollo de cocina",
         description: ["Rollo de cocina x4 unidades de 200 paños."],
         price: 29000,
-        image: "../../public/combo50.jpeg",
+        image: "/combo50.jpeg",
         tone: "red",
     }
     ,
@@ -442,7 +442,7 @@ const productosMock = [
         title: "Papel Higiénico",
         description: ["Papel higenico hoja simple 4 x 30mts"],
         price: 1900,
-        image: "../../public/combo51.jpeg",
+        image: "/combo51.jpeg",
         tone: "red",
     }
     ,
@@ -451,7 +451,7 @@ const productosMock = [
         title: "Bicarbonato",
         description: ["500 gr de bicarbonato."],
         price: 3499,
-        image: "../../public/combo52.jpeg",
+        image: "/combo52.jpeg",
         tone: "red",
     }
     ,
@@ -460,7 +460,7 @@ const productosMock = [
         title: "Bicarbonato",
         description: ["Bicarbonato de sodio x 1 kg."],
         price: 6220,
-        image: "../../public/combo53.jpeg",
+        image: "/combo53.jpeg",
         tone: "red",
     }
     ,
@@ -469,7 +469,7 @@ const productosMock = [
         title: "Blanqueador natural",
         description: ["1 kg de percarbonato de sodio.", "En granel"],
         price: 12600,
-        image: "../../public/combo54.jpeg",
+        image: "/combo54.jpeg",
         tone: "red",
     }
     ,
@@ -478,7 +478,7 @@ const productosMock = [
         title: "Blanqueador natural",
         description: ["500 gr de percarbonato de sodio.", "En granel"],
         price: 6930,
-        image: "../../public/combo55.jpeg",
+        image: "/combo55.jpeg",
         tone: "red",
     }
     ,
@@ -487,7 +487,7 @@ const productosMock = [
     //     title: "Combo N°16: Blanquisimo",
     //     description: ["5 lts de jabon doble concentrado tipo skyp.", "5 lts de suavizante", "5 lts de lavandina para bancos", "1 kg de percarbonato (blanqueador)"],
     //     price: 6930,
-    //     image: "../../public/combo56.jpeg",
+    //     image: "/combo56.jpeg",
     //     tone: "red",
     // }
     ,
@@ -496,7 +496,7 @@ const productosMock = [
         title: "Balde",
         description: ["Balde de limpieza x 1"],
         price: 4050,
-        image: "../../public/combo56.jpeg",
+        image: "/combo56.jpeg",
         tone: "red",
     }
     ,
@@ -505,7 +505,7 @@ const productosMock = [
         title: "Pastilla para lavarropas",
         description: ["Pastilla para lavarropas x 3.", "Se usa 1 cada 15 dias", "Quita sarro y residuos en el lavarropas."],
         price: 5000,
-        image: "../../public/combo57.jpeg",
+        image: "/combo57.jpeg",
         tone: "red",
     }
     ,
@@ -514,7 +514,7 @@ const productosMock = [
         title: "Papel Higiénico",
         description: ["Papel higiénico hoja simple x 10 x 30mts"],
         price: 5400,
-        image: "../../public/combo58.jpeg",
+        image: "/combo58.jpeg",
         tone: "red",
     }
     ,
@@ -523,7 +523,7 @@ const productosMock = [
         title: "Papel Higiénico",
         description: ["Papel higiénico doble hoja simple x 6 x 100mts"],
         price: 13320,
-        image: "../../public/combo59.jpeg",
+        image: "/combo59.jpeg",
         tone: "red",
     }
      ,
@@ -532,7 +532,7 @@ const productosMock = [
         title: "Esponja",
         description: ["Esponja para limpieza x 1"],
         price: 646,
-        image: "../../public/combo60.jpeg",
+        image: "/combo60.jpeg",
         tone: "red",
     }
 ];
