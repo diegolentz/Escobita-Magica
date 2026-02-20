@@ -128,6 +128,413 @@ const productosMock = [
         image: "../../public/combo16.jpeg",
         tone: "red",
     }
+
+    // 
+    ,
+    {
+        id: 17,
+        title: "Alcohol al 70%",
+        description: ["5 litro de alcohol al 70%."],
+        price: 7630,
+        image: "../../public/combo17.jpeg",
+        tone: "red",
+    }
+    ,
+    {
+        id: 18,
+        title: "Alcohol al 70%",
+        description: ["1 litro de alcohol al 70%."],
+        price: 2867,
+        image: "../../public/combo18.jpeg",
+        tone: "red",
+    }
+    ,
+    {
+        id: 19,
+        title: "Alcohol al 96%",
+        description: ["5 lts de alcohol al 96%."],
+        price: 10585,
+        image: "../../public/combo19.jpeg",
+        tone: "red",
+    }
+    ,
+    {
+        id: 20,
+        title: "Alcohol al 96%",
+        description: ["1 litro de alcohol al 96%."],
+        price: 3499,
+        image: "../../public/combo20.jpeg",
+        tone: "red",
+    }
+    ,
+    {
+        id: 21,
+        title: "Cloro",
+        description: ["5 lts de cloro."],
+        price: 6930,
+        image: "../../public/combo21.jpeg",
+        tone: "red",
+    }
+    ,
+    {
+        id: 22,
+        title: "Cloro",
+        description: ["1 litro de cloro."],
+        price: 1500,
+        image: "../../public/combo22.jpeg",
+        tone: "red",
+    }
+    ,
+    {
+        id: 23,
+        title: "Jabon de manos",
+        description: ["5 lts de jabon de manos."],
+        price: 9720,
+        image: "../../public/combo23.jpeg",
+        tone: "red",
+    }
+    ,
+    {
+        id: 24,
+        title: "Jabon de manos liquido",
+        description: ["1 litro de jabon de manos liquido."],
+        price: 3060,
+        image: "../../public/combo24.jpeg",
+        tone: "red",
+    }
+    ,
+    {
+        id: 25,
+        title: "Jabon liquido doble concentrado",
+        description: ["5 litros de jabon liquido tipo skip."],
+        price: 7650,
+        image: "../../public/combo25.jpeg",
+        tone: "red",
+    }
+    ,
+    {
+        id: 26,
+        title: "Jabon liquido doble concentrado",
+        description: ["1 litro de jabon liquido tipo skip."],
+        price: 2187,
+        image: "../../public/combo26.jpeg",
+        tone: "red",
+    }
+    ,
+    {
+        id: 27,
+        title: "Jabon liquido premium",
+        description: ["5 litros de jabon liquido premium lavadero."],
+        price: 9720,
+        image: "../../public/combo27.jpeg",
+        tone: "red",
+    }
+    ,
+    {
+        id: 28,
+        title: "Jabon liquido premium",
+        description: ["1 litro de jabon liquido premium lavadero."],
+        price: 2500,
+        image: "../../public/combo28.jpeg",
+        tone: "red",
+    }
+    ,
+    {
+        id: 29,
+        title: "Lavandina",
+        description: ["5 lts de lavandina concentrada."],
+        price: 3600,
+        image: "../../public/combo29.jpeg",
+        tone: "red",
+    }
+    ,
+    {
+        id: 30,
+        title: "Lavandina",
+        description: ["1 litro de lavandina concentrada."],
+        price: 1000,
+        image: "../../public/combo30.jpeg",
+        tone: "red",
+    }
+    ,
+    {
+        id: 31,
+        title: "Suavizante",
+        description: ["5 lts de suavizante."],
+        price: 8500,
+        image: "../../public/combo31.jpeg",
+        tone: "red",
+    }
+    ,
+    {
+        id: 32,
+        title: "Suavizante",
+        description: ["1 litro de suavizante."],
+        price: 2000,
+        image: "../../public/combo32.jpeg",
+        tone: "red",
+    }
+    ,
+    {
+        id: 33,
+        title: "Escencias para pisos",
+        description: ["Escencias concentradas para pisos x 250cc", "Rinde 5 litros."],
+        price: 10350,
+        image: "../../public/combo16.jpeg",
+        tone: "red",
+    }
+    ,
+    {
+        id: 34,
+        title: "Desengrasante",
+        description: ["Desengrasante multiuso x 5 litros."],
+        price: 22050,
+        image: "../../public/combo34.jpeg",
+        tone: "red",
+    }
+    ,
+    {
+        id: 35,
+        title: "Desengrasante",
+        description: ["Desengrasante multiuso x 1 litro."],
+        price: 2610,
+        image: "../../public/combo35.jpeg",
+        tone: "red",
+    }
+    ,
+    {
+        id: 36,
+        title: "Desengrasante",
+        description: ["5 litros de desengrasante."],
+        price: 9900,
+        image: "../../public/combo36.jpeg",
+        tone: "red",
+    }
+    ,
+    {
+        id: 37,
+        title: "Desengrasante",
+        description: ["1 litro de desengrasante."],
+        price: 2790,
+        image: "../../public/combo37.jpeg",
+        tone: "red",
+    }
+    ,
+    {
+        id: 38,
+        title: "Lavandina en gel",
+        description: ["5 litros de lavandina en gel."],
+        price: 5832,
+        image: "../../public/combo38.jpeg",
+        tone: "red",
+    }
+    ,
+    {
+        id: 39,
+        title: "Lavandina en gel",
+        description: ["1 litro de lavandina en gel."],
+        price: 1458,
+        image: "../../public/combo39.jpeg",
+        tone: "red",
+    }
+    ,
+    {
+        id: 40,
+        title: "Lavandina para blancos",
+        description: ["5 litros de lavandina para blancos."],
+        price: 4050,
+        image: "../../public/combo40.jpeg",
+        tone: "red",
+    }
+    ,
+    {
+        id: 41,
+        title: "Lavandina para blancos",
+        description: ["1 litro de lavandina para blancos."],
+        price: 1170,
+        image: "../../public/combo41.jpeg",
+        tone: "red",
+    }
+    ,
+    {
+        id: 42,
+        title: "Perfumina",
+        description: ["Perfumina concentrada para ropa x 250cc"],
+        price: 3090,
+        image: "../../public/combo42.jpeg",
+        tone: "red",
+    }
+    ,
+    {
+        id: 43,
+        title: "Perfumina",
+        description: ["Perfumina concentrada para ropa x 1 litro"],
+        price: 7650,
+        image: "../../public/combo43.jpeg",
+        tone: "red",
+    }
+    ,
+    {
+        id: 44,
+        title: "Balde",
+        description: ["Balde escurridor X 1."],
+        price: 9000,
+        image: "../../public/combo44.jpeg",
+        tone: "red",
+    }
+    ,
+    {
+        id: 45,
+        title: "Balde ",
+        description: ["Balde redondo X 1."],
+        price: 3600,
+        image: "../../public/combo45.jpeg",
+        tone: "red",
+    }
+    ,
+    {
+        id: 46,
+        title: "Paño Repasador",
+        description: ["Paño amarillo de valerina"],
+        price: 464,
+        image: "../../public/combo46.jpeg",
+        tone: "red",
+    }
+    ,
+    {
+        id: 47,
+        title: "Paño Repasador",
+        description: ["Paño repasador de algodón."],
+        price: 2430,
+        image: "../../public/combo47.jpeg",
+        tone: "red",
+    }
+    ,
+    {
+        id: 48,
+        title: "Rollo de cocina",
+        description: ["Rollo de cocina x 4 unidades"],
+        price: 9500,
+        image: "../../public/combo48.jpeg",
+        tone: "red",
+    }
+    ,
+    {
+        id: 49,
+        title: "Rollo de cocina",
+        description: ["Rollo de cocina x 200 paños"],
+        price: 2700,
+        image: "../../public/combo49.jpeg",
+        tone: "red",
+    }
+    ,
+    {
+        id: 50,
+        title: "Rollo de cocina",
+        description: ["Rollo de cocina x4 unidades de 200 paños."],
+        price: 29000,
+        image: "../../public/combo50.jpeg",
+        tone: "red",
+    }
+    ,
+    {
+        id: 51,
+        title: "Papel Higiénico",
+        description: ["Papel higenico hoja simple 4 x 30mts"],
+        price: 1900,
+        image: "../../public/combo51.jpeg",
+        tone: "red",
+    }
+    ,
+    {
+        id: 52,
+        title: "Bicarbonato",
+        description: ["500 gr de bicarbonato."],
+        price: 3499,
+        image: "../../public/combo52.jpeg",
+        tone: "red",
+    }
+    ,
+    {
+        id: 53,
+        title: "Bicarbonato",
+        description: ["Bicarbonato de sodio x 1 kg."],
+        price: 6220,
+        image: "../../public/combo53.jpeg",
+        tone: "red",
+    }
+    ,
+    {
+        id: 54,
+        title: "Blanqueador natural",
+        description: ["1 kg de percarbonato de sodio.", "En granel"],
+        price: 12600,
+        image: "../../public/combo54.jpeg",
+        tone: "red",
+    }
+    ,
+    {
+        id: 55,
+        title: "Blanqueador natural",
+        description: ["500 gr de percarbonato de sodio.", "En granel"],
+        price: 6930,
+        image: "../../public/combo55.jpeg",
+        tone: "red",
+    }
+    ,
+    // {
+    //     id: 56,
+    //     title: "Combo N°16: Blanquisimo",
+    //     description: ["5 lts de jabon doble concentrado tipo skyp.", "5 lts de suavizante", "5 lts de lavandina para bancos", "1 kg de percarbonato (blanqueador)"],
+    //     price: 6930,
+    //     image: "../../public/combo56.jpeg",
+    //     tone: "red",
+    // }
+    ,
+    {
+        id: 56,
+        title: "Balde",
+        description: ["Balde de limpieza x 1"],
+        price: 4050,
+        image: "../../public/combo56.jpeg",
+        tone: "red",
+    }
+    ,
+    {
+        id: 57,
+        title: "Pastilla para lavarropas",
+        description: ["Pastilla para lavarropas x 3.", "Se usa 1 cada 15 dias", "Quita sarro y residuos en el lavarropas."],
+        price: 5000,
+        image: "../../public/combo57.jpeg",
+        tone: "red",
+    }
+    ,
+    {
+        id: 58,
+        title: "Papel Higiénico",
+        description: ["Papel higiénico hoja simple x 10 x 30mts"],
+        price: 5400,
+        image: "../../public/combo58.jpeg",
+        tone: "red",
+    }
+    ,
+    {
+        id: 59,
+        title: "Papel Higiénico",
+        description: ["Papel higiénico doble hoja simple x 6 x 100mts"],
+        price: 13320,
+        image: "../../public/combo59.jpeg",
+        tone: "red",
+    }
+     ,
+    {
+        id: 60,
+        title: "Esponja",
+        description: ["Esponja para limpieza x 1"],
+        price: 646,
+        image: "../../public/combo60.jpeg",
+        tone: "red",
+    }
 ];
 
 export const getProductos = async () => {
