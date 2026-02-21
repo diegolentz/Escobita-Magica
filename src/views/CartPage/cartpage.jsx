@@ -77,7 +77,7 @@ export const CartPage = () => {
                 <h1>Revisa tu carrito de compras y hace los ajustes necesarios</h1>
                 <div className="descripcionBeneficios">
                     <span className="beneficio beneficioPrincipal">
-                        🚚 Envíos sin cargo desde $25.000
+                        🚚 Envíos sin cargo desde $24.500
                     </span>
                     <span className="beneficio beneficioPrincipal">📍 Envíos solo en GBA</span>
                 </div>
