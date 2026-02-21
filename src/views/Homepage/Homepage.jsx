@@ -180,7 +180,7 @@ export const HomePage = () => {
 
             <div className="footerSection">
                 <h3>Contacto</h3>
-                <a href="https://wa.me/541234567890" target="_blank" rel="noopener noreferrer">
+                <a href="https://wa.me/541121556231" target="_blank" rel="noopener noreferrer">
                     📱 WhatsApp
                 </a>
                 <a href="https://instagram.com/escobita.magica" target="_blank" rel="noopener noreferrer">

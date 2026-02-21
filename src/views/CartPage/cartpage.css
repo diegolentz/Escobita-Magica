@@ -58,3 +58,43 @@
         color: red;
     }
 }
+
+
+.resumenCompra{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    background-color: var(--FondoBoton);
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    padding: 2rem;
+    margin: 2rem 0;
+    width: 45rem;
+    align-self: center;
+}
+
+.resumenCompra h2{
+    margin: 0;
+    font-size: 1.8rem;
+    color: var(--Rojo);
+}
+
+.btnConfirmarPedido{
+    padding: 1rem 2rem;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btnConfirmarPedido:hover{
+    background-color: #45a049;
+}
+
+.btnConfirmarPedido:active{
+    transform: scale(0.98);
+}
